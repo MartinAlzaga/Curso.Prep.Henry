@@ -41,7 +41,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x: 5 - y: 2;
+  return x - y;
 }
 
 function multiplica(x, y) {
@@ -60,7 +60,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  return x = y;
+  if(x === y){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
