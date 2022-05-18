@@ -120,6 +120,9 @@ function esEntero(numero) {
   if (Math.floor (numero)){
     return true
   }
+  else if (numero === 0){
+    return true 
+  }
   else {
     return false
   }
