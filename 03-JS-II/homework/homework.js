@@ -92,13 +92,13 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero === 10){
-    return "true"
+    return true
   }
   else if (numero === 5){
-    return "true"
+    return true
   } 
   else {
-    return "false"
+    return false
   }
 }
 
@@ -107,13 +107,13 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero < 50){
-    return "true"
+    return true
   }
   else if (numero > 20){
-    return "true"
+    return true
   }
   else {
-    return "false"
+    return false
   }
 }
 
