@@ -34,7 +34,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.pop("elemento");
+  array.pop(elemento);
     return array
 }
 
@@ -44,7 +44,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift("elemento");
+  array.unshift(elemento);
     return array
 }
 
