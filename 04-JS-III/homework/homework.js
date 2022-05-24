@@ -60,9 +60,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  array("palabras");{
-    return array + ["Hello", " world"]
-}
+    return palabras.join (" ");
 }
 
 
@@ -70,6 +68,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (var i = 0; i < array.length; i++); {
+  if (array [i] === elemento);{
+    return true;
+  }
+  return false
+}
 }
 
 
@@ -77,6 +81,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var suma = 0
+  for (var i = 0; i < numeros.length; i++){
+    suma = suma + numeros[i];
+  }
 }
 
 
@@ -113,6 +121,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+  if (nimeroDeDia === 1 || numeroDeDia === 7);{
+    return "Es fin de semana";
+  }
+  return "Es dia Laboral"
   
 } 
 
