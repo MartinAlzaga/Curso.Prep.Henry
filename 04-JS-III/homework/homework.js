@@ -69,11 +69,11 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (var i = 0; i < array.length; i++); {
-  if (array [i] === elemento);{
+  if (array[i] === elemento) {
     return true;
-  }
-  return false
+  } 
 }
+  return false
 }
 
 
@@ -93,6 +93,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  return agregarNumeros (resultadosTest) / resultadosTest.length
 }
 
 
@@ -100,6 +101,12 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var maximo = numeros [0];
+  for (var i = 1; i < numeros.length; i++) {
+  if (numeros[i] > maximo){
+  }
+}
+return maximo
 }
 
 
@@ -107,13 +114,24 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  if (arguments.length < 1) return 0;
+  var total = 1;
+  for (var i = 0; i < arguments.length; i++){
+    total = total * arguments[i] 
+    }
+  return total 
 }
-
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  let contador = 0
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] > "19") {
+  contador ++
+    }
+  }
+  return contador
 }
 
 
@@ -133,7 +151,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  let num = n.String()
+  if (num.charAt(0) === "9"){
+    return true
+  }
+  return false
 }
 
 
@@ -141,7 +163,12 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  for (var i = 0; i < arreglo.length - 1; i++) {
+    if (arreglo[i] !== arreglo.length) {
+      return false
+    }
+  }
+  return true 
 } 
 
 
